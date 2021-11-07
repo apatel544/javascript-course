@@ -136,7 +136,8 @@ console.log("markBMI1 " + markBMI1 + " johnBMI1 " + johnBMI1 + " " + markHigherB
 console.log("markBMI2 " + markBMI2 + " johnBMI2 " + johnBMI2 + " " + markHigherBMI2);
 */
 
-
+// Strings and Template Literals
+/*
 const firstName = 'Ankur';
 const job = 'programmer';
 const birthYear = 1996;
@@ -149,3 +150,26 @@ console.log(ankur);
 const ankurLiteral = `I'm ${firstName}`;
 
 console.log(ankurLiteral);
+*/
+
+// IF-Else Statements
+const age = 12;
+
+
+if (age >= 18){
+  console.log('Serena can starting driving 🚗');
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Serena has ${yearsLeft} before she can drive.`);
+}
+
+const birthYear = 1998;
+let century;
+if(birthYear < 2000) {
+  century = 20;
+} else{
+  century = 21;
+}
+
+console.log(century); 
+
