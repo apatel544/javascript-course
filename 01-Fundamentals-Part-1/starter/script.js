@@ -71,4 +71,67 @@ console.log(isIsland);
 console.log(language);
 console.log(country);
 console.log(population);
+
+let age = 30;
+age = 31;
+
+const birthYear = 1991;
+
+// const job;
+
+var job = "programmer";
+job = "entreprenuer";
+*/
+/*
+const now = 2037;
+
+const ageAnkur = now - 1996;
+const ageSerena = now - 1997;
+console.log(ageAnkur,ageSerena);
+
+console.log(ageAnkur * 2, ageAnkur / 10, 2**3);
+// 2 ** 4 means 2 to the power of 3 
+
+const firstName = 'Ankur';
+const lastName = 'Patel';
+console.log(firstName + ' ' + lastName);
+
+let x = 10 + 5; // 15 
+x+=10 // x = x + 10
+console.log(x);
+
+console.log(ageAnkur > ageSerena);
+console.log(ageSerena >= 18);
+*/
+
+
+/**
+ * Coding Challenge 1
+ */
+/*
+const markWeight1 = 78;
+const johnWeight1 = 92;
+
+const markHeight1 = 1.69;
+const johnHeight1 = 1.95;
+
+const markWeight2 = 95;
+const johnWeight2 = 85;
+
+const markHeight2 = 1.88;
+const johnHeight2 = 1.76;
+
+const markBMI1 = markWeight1 / markHeight1 ** 2;
+const johnBMI1 = johnWeight1 / (johnHeight1 * johnHeight1);
+
+const markBMI2 = markWeight2 / (markHeight2 * markHeight2);
+const johnBMI2 = johnWeight2 / johnHeight2 ** 2;
+
+const markHigherBMI1 = markBMI1 > johnBMI1;
+const markHigherBMI2 = markBMI2 > johnBMI2;
+
+
+console.log("markBMI1 " + markBMI1 + " johnBMI1 " + johnBMI1 + " " + markHigherBMI1);
+
+console.log("markBMI2 " + markBMI2 + " johnBMI2 " + johnBMI2 + " " + markHigherBMI2);
 */
