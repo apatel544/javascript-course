@@ -135,3 +135,17 @@ console.log("markBMI1 " + markBMI1 + " johnBMI1 " + johnBMI1 + " " + markHigherB
 
 console.log("markBMI2 " + markBMI2 + " johnBMI2 " + johnBMI2 + " " + markHigherBMI2);
 */
+
+
+const firstName = 'Ankur';
+const job = 'programmer';
+const birthYear = 1996;
+const year = 2037;
+
+const ankur = "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
+
+console.log(ankur);
+
+const ankurLiteral = `I'm ${firstName}`;
+
+console.log(ankurLiteral);
