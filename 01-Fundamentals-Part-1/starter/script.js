@@ -210,7 +210,7 @@ if (markBMI1 > johnBMI1){
 /**
  * Type Conversion and Coercion
  */
-
+/*
 //Type Conversion
 
 const inputYear = '1996';
@@ -232,5 +232,33 @@ console.log('23' > '18');
 let n = '1' + 1;
 n = n - 1;
 console.log(n);
+*/
 
+/**
+ * Truthy and Falsy 
+ */
 
+// /*
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('ankur'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 0;
+
+if (money){
+  console.log("Dont spend it all");
+} else {
+  console.log("You should get a job");
+};
+
+let height;
+
+if(height) {
+  console.log("height is defined");
+} else {
+  console.log("Height is UNDEFINED");  
+}
+
+console.log(typeof height);
