@@ -105,7 +105,7 @@ console.log(ageSerena >= 18);
 */
 
 
-/**
+/*********************************************
  * Coding Challenge 1
  */
 /*
@@ -134,7 +134,7 @@ const markHigherBMI2 = markBMI2 > johnBMI2;
 console.log("markBMI1 " + markBMI1 + " johnBMI1 " + johnBMI1 + " " + markHigherBMI1);
 
 console.log("markBMI2 " + markBMI2 + " johnBMI2 " + johnBMI2 + " " + markHigherBMI2);
-*/
+*****************************************/
 
 // Strings and Template Literals
 /*
@@ -151,7 +151,7 @@ const ankurLiteral = `I'm ${firstName}`;
 
 console.log(ankurLiteral);
 */
-
+/*
 // IF-Else Statements
 const age = 12;
 
@@ -172,4 +172,38 @@ if(birthYear < 2000) {
 }
 
 console.log(century); 
+*/
+
+/*********************************************
+ * Coding Challenge 2
+ */
+
+const markWeight1 = 10;
+const johnWeight1 = 92;
+
+const markHeight1 = 1.69;
+const johnHeight1 = 1.95;
+
+const markWeight2 = 95;
+const johnWeight2 = 85;
+
+const markHeight2 = 1.88;
+const johnHeight2 = 1.76;
+
+const markBMI1 = markWeight1 / markHeight1 ** 2;
+const johnBMI1 = johnWeight1 / (johnHeight1 * johnHeight1);
+
+const markBMI2 = markWeight2 / (markHeight2 * markHeight2);
+const johnBMI2 = johnWeight2 / johnHeight2 ** 2;
+
+const markHigherBMI1 = markBMI1 > johnBMI1;
+const markHigherBMI2 = markBMI2 > johnBMI2;
+
+if (markBMI1 > johnBMI1){
+  console.log(`Mark's BMI (${markBMI1}) is greater than John's BMI (${johnBMI1})`);
+}else {
+  console.log(`Johns's BMI (${johnBMI1}) is greater than Marks's BMI (${markBMI1})`);
+}
+
+*****************************************/
 
