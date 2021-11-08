@@ -177,7 +177,7 @@ console.log(century);
 /*********************************************
  * Coding Challenge 2
  */
-
+/*
 const markWeight1 = 10;
 const johnWeight1 = 92;
 
@@ -196,7 +196,7 @@ const johnBMI1 = johnWeight1 / (johnHeight1 * johnHeight1);
 const markBMI2 = markWeight2 / (markHeight2 * markHeight2);
 const johnBMI2 = johnWeight2 / johnHeight2 ** 2;
 
-const markHigherBMI1 = markBMI1 > johnBMI1;
+const markHigherBMI1 = markBMI1 > johnBMI1;  
 const markHigherBMI2 = markBMI2 > johnBMI2;
 
 if (markBMI1 > johnBMI1){
@@ -205,5 +205,32 @@ if (markBMI1 > johnBMI1){
   console.log(`Johns's BMI (${johnBMI1}) is greater than Marks's BMI (${markBMI1})`);
 }
 
-// *****************************************/
+*****************************************/
+
+/**
+ * Type Conversion and Coercion
+ */
+
+//Type Conversion
+
+const inputYear = '1996';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 10);
+
+console.log(Number('Ankur'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+//Type Coercion
+
+console.log('I am ' + 23 + " years old");
+console.log('23' - '10' - 3);
+console.log('23' / 2);
+console.log('23' > '18');
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
+
 
