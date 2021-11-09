@@ -238,7 +238,7 @@ console.log(n);
  * Truthy and Falsy 
  */
 
-// /*
+/*
 console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean('ankur'));
@@ -262,3 +262,39 @@ if(height) {
 }
 
 console.log(typeof height);
+*/
+
+/**
+ * Equality Operators == vs ===
+ * 11/8/21
+ */
+
+// === , Stricter, values must be an exact match and no type coercion, 18 === 18
+const age = 18;
+// if(age === 18){
+//   console.log("You just became an adult!");
+// }
+
+// == , less strict, DOES do type coercion, 18 == '18'
+if(age == '18'){
+  console.log("You just became an adult!");
+}
+
+const favorite = Number(prompt("Whats your favorite number?"));
+
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 24) {
+  console.log("Nice number!"); 
+} else if(favorite === 7){
+  console.log("7 is also a cool number!");
+} else if(favorite === 9){
+  console.log("9 is also a cool number!");
+} else {
+  console.log("favorite number is neither 24, 7 or 9");
+}
+
+if (favorite !== 23) {
+  console.log("why not 23?");
+}
