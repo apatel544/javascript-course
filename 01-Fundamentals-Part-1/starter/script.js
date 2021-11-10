@@ -299,7 +299,7 @@ if (favorite !== 23) {
   console.log("why not 23?");
 }
 */
-
+/*
 const hasDriversLicense = true; // A
 const hasGoodVision = true; // B
 
@@ -323,4 +323,59 @@ if (shouldDrive && hasGoodVision && !isTired){
 } else {
   console.log("Someone else should drive...");
 }
+*/
+
+/**********************************************************************
+ * CODING CHALLENGE 3 
+ */
+
+const dolphinAverageScore1 = (96 + 108 + 89) / 3;
+const koalaAverageScore1 =  (88 + 91 + 110) / 3;
+
+console.log(dolphinAverageScore1 , koalaAverageScore1);
+
+if (dolphinAverageScore1 < koalaAverageScore1) {
+  console.log("Hello koalas win with an average score of: " + koalaAverageScore1);
+} else if(dolphinAverageScore1 > koalaAverageScore1){
+  console.log("Hello dolphins win with an average score of: " + dolphinAverageScore1);
+} else if(dolphinAverageScore1 === koalaAverageScore1){
+  console.log("Both teams have won the trophy!");
+} else {
+  console.log("error");
+}
+
+// BONUS 1 
+const dolphinAverageScore2 = (97 + 112 + 101) / 3;
+const koalaAverageScore2 =  (109 + 95 + 123) / 3;
+console.log(dolphinAverageScore2 , koalaAverageScore2);
+
+if (dolphinAverageScore2 < koalaAverageScore2 && koalaAverageScore2 >= 100) {
+  console.log("Hello koalas win with an average score of: " + koalaAverageScore2);
+} else if(dolphinAverageScore2 > koalaAverageScore2 && dolphinAverageScore2 >= 100){
+  console.log("Hello dolphins win with an average score of: " + dolphinAverageScore2);
+} else if(dolphinAverageScore2 === koalaAverageScore2){
+  console.log("Both teams have won the trophy!" && koalaAverageScore2 >= 100 && dolphinAverageScore2 >= 100);
+} else {
+  console.log("No one won a trophy");
+}
+
+// BONUS 2
+const dolphinAverageScore3 = (97 + 112 + 101) / 3;
+const koalaAverageScore3 =  (109 + 95 + 106) / 3;
+console.log(dolphinAverageScore3 , koalaAverageScore3);
+
+if (dolphinAverageScore3 < koalaAverageScore3) {
+  console.log("Hello koalas win with an average score of: " + koalaAverageScore3);
+} else if(dolphinAverageScore3 > koalaAverageScore3){
+  console.log("Hello dolphins win with an average score of: " + dolphinAverageScore3);
+} else if(dolphinAverageScore3 === koalaAverageScore3){
+  console.log("Both teams have won the trophy!");
+} else {
+  console.log("error");
+}
+
+
+
+
+
 
