@@ -328,7 +328,7 @@ if (shouldDrive && hasGoodVision && !isTired){
 /**********************************************************************
  * CODING CHALLENGE 3 
  */
-
+/*
 const dolphinAverageScore1 = (96 + 108 + 89) / 3;
 const koalaAverageScore1 =  (88 + 91 + 110) / 3;
 
@@ -374,7 +374,52 @@ if (dolphinAverageScore3 < koalaAverageScore3) {
   console.log("error");
 }
 
+*/
 
+/**
+ * SWITCH STATEMENT
+ */
+
+const day = 'friday';
+
+switch(day) {
+  case 'monday':
+    console.log('Start of the week');
+    console.log('Wake up for work!');
+    break;
+  case 'tuesday':
+    console.log('Team evaluation tonight!');
+    break;
+  case 'wednesday':
+  case 'thursday':
+    console.log('go to the gym');
+    break;
+  case 'friday':
+    console.log('FNH and TGIF!');
+    break;
+  case 'saturday':
+  case 'sunday':
+    console.log('Get your class work completed!');
+    break;
+  default: 
+    console.log('not a valid day...');
+}
+
+// Switch Converted into If-Else
+if(day === 'monday'){
+  console.log('Start of the week');
+  console.log('Wake up for work!');
+} else if (day === 'tuesday') {
+  console.log('Team evaluation tonight!');
+} else if (day === 'wednesday' || day === 'thursday') {
+  console.log('go to the gym');
+} else if (day === 'friday') {
+  console.log('FNH and TGIF!');
+} else if (day === 'saturday' || day === 'sunday') {
+  console.log('Get your class work completed!');
+} else {
+  console.log('not a valid day...');
+}
 
 
 
