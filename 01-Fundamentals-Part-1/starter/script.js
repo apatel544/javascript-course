@@ -268,12 +268,12 @@ console.log(typeof height);
  * Equality Operators == vs ===
  * 11/8/21
  */
-
+/*
 // === , Stricter, values must be an exact match and no type coercion, 18 === 18
 const age = 18;
-// if(age === 18){
-//   console.log("You just became an adult!");
-// }
+if(age === 18){
+  console.log("You just became an adult!");
+}
 
 // == , less strict, DOES do type coercion, 18 == '18'
 if(age == '18'){
@@ -298,3 +298,29 @@ if (favorite === 24) {
 if (favorite !== 23) {
   console.log("why not 23?");
 }
+*/
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive){
+//   console.log("Serena is able to drive!");
+// } else {
+//   console.log("Someone else should drive...");
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (shouldDrive && hasGoodVision && !isTired){
+  console.log("Serena is able to drive!");
+} else {
+  console.log("Someone else should drive...");
+}
+
