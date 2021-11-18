@@ -433,7 +433,7 @@ if(day === 'monday'){
 /**
  * Conditional Ternary Operator
  */
-
+/*
 const age = 24;
  
 // age >= 21 ? console.log("I am an adult!") : console.log("I love water!");
@@ -449,3 +449,21 @@ if (age >= 21) {
   drink2 = 'water';
 }
 console.log(drink2);
+*/
+
+/***************************************
+ * Coding Challenge 4
+ * Tip Calculator
+ */
+
+const bill = 430;
+const tip = (bill >= 50 && bill <= 300) ? bill * .15 : bill * .20;
+
+const total = `The bill was ${bill}, the tip was ${tip} and the total (bill + tip) came out to ${bill + tip}!`;
+console.log(total);
+
+
+
+
+
+
