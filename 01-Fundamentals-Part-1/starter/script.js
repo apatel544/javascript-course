@@ -1,9 +1,8 @@
 /****************************
  * The Complete JavaScript Course: From Zero to Expert!
- *  
+ *  Section: Fundamentals JS Part 1
  * Course taken by: Ankur Patel
  * Start: November 1st, 2021
- * 
  ****************************/
 
 /*
