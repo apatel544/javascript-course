@@ -1,3 +1,11 @@
+/****************************
+ * The Complete JavaScript Course: From Zero to Expert!
+ *  
+ * Course taken by: Ankur Patel
+ * Start: November 1st, 2021
+ * 
+ ****************************/
+
 /*
 let js = 'amazing';
 console.log(40 + 8 + 23 - 10);
@@ -176,7 +184,8 @@ console.log(century);
 
 /*********************************************
  * Coding Challenge 2
- */
+ * 
+*/
 /*
 const markWeight1 = 10;
 const johnWeight1 = 92;
@@ -379,8 +388,8 @@ if (dolphinAverageScore3 < koalaAverageScore3) {
 /**
  * SWITCH STATEMENT
  */
-
-const day = 'friday';
+/*
+const day = 'tuesday';
 
 switch(day) {
   case 'monday':
@@ -405,22 +414,38 @@ switch(day) {
     console.log('not a valid day...');
 }
 
-// Switch Converted into If-Else
 if(day === 'monday'){
   console.log('Start of the week');
   console.log('Wake up for work!');
 } else if (day === 'tuesday') {
   console.log('Team evaluation tonight!');
-} else if (day === 'wednesday' || day === 'thursday') {
+} else if (day === 'wednesday' || day ==='thursday') {
   console.log('go to the gym');
 } else if (day === 'friday') {
   console.log('FNH and TGIF!');
-} else if (day === 'saturday' || day === 'sunday') {
+} else if (day == 'saturday' || day == 'sunday') {
   console.log('Get your class work completed!');
 } else {
   console.log('not a valid day...');
 }
+*/
 
+/**
+ * Conditional Ternary Operator
+ */
 
+const age = 24;
+ 
+// age >= 21 ? console.log("I am an adult!") : console.log("I love water!");
 
+const drinkingAge = age >= 21 ? 'beer' : 'water';
+console.log(drinkingAge);
 
+let drink2;
+
+if (age >= 21) {
+  drink2 = 'beer';
+} else {
+  drink2 = 'water';
+}
+console.log(drink2);
