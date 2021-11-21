@@ -18,4 +18,22 @@ if (hasDriversLicense) console.log('I can Drive!');
 // const private = 123;
 */
 
+function logger() {
+  console.log('My name is Ankur');
+}
 
+// Calling/Running/Invoking a function
+logger();
+logger();
+logger();
+
+function fruitProcessor(apples, oranges) {
+  const juice = `Juice made from ${ apples } apples and ${ oranges } oranges!`;
+  return juice;
+}
+
+const appleJuice = fruitProcessor(4, 7);
+console.log(appleJuice);
+
+const appleOrangeJuice = fruitProcessor(0, 2);
+console.log(appleOrangeJuice);
