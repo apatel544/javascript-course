@@ -97,7 +97,7 @@ function fruitSlicer(fruit) {
 const smoothie = fruitProcessor(2, 4);
 console.log(smoothie);
 */
-
+/*
 // Functions review
 
 const calcAge = function (birthYear) {
@@ -120,3 +120,35 @@ console.log(yearsUntilRetirement(1996, 'Ankur'));
 console.log(yearsUntilRetirement(1998, 'Serena'));
 
 console.log(calcAge(1996));
+*/
+
+/*************************************************************
+ * CODING CHALLENGE 1
+ */
+
+const calcAverage = (score1, score2, score3) => {
+  const average = (score1 + score2 + score3) / 3;
+  return average;
+}
+
+//Test Data Set 1
+// const dolphinScore = calcAverage(44, 23, 71);
+// const koalaScore = calcAverage(65, 54, 49);
+//Test Data Set 2
+const dolphinScore = calcAverage(85, 54, 41);
+const koalaScore = calcAverage(23, 34, 27);
+
+console.log(dolphinScore);
+console.log(koalaScore);
+
+const checkWinner = (avrgDolphins, avrgKoalas) => {
+  if (avrgDolphins >= avrgKoalas * 2) {
+    console.log('Dolphins Win with an average of ' + avrgDolphins);
+  } else if (avrgKoalas >= avrgDolphins * 2) {
+    console.log('Koalas Win with an average of ' + avrgKoalas);
+  } else {
+    console.log('No one Wins... :( Dolphins Average: ' + avrgDolphins + ' and the Koalas Average: ' + avrgKoalas);
+  }
+}
+
+checkWinner(dolphinScore,koalaScore);
