@@ -45,7 +45,7 @@ console.log(appleOrangeJuice);
 */
 
 // Function Declaration vs Expressions
-
+/*
 // Function Declaration
 function calcAge1(birthYear) {
   return 2037 - birthYear;
@@ -60,7 +60,7 @@ const calcAge2 = function (birthYear) {
 const age2 = calcAge2(1996);
 
 // console.log(age1, age2)
-
+*/
 /*
 
 // Arrow Functions
@@ -125,7 +125,7 @@ console.log(calcAge(1996));
 /*************************************************************
  * CODING CHALLENGE 1
  */
-
+/*
 const calcAverage = (score1, score2, score3) => {
   const average = (score1 + score2 + score3) / 3;
   return average;
@@ -152,3 +152,38 @@ const checkWinner = (avrgDolphins, avrgKoalas) => {
 }
 
 checkWinner(dolphinScore,koalaScore);
+*/
+
+// Arrays
+const friend1 = 'Ankur';
+const friend2 = 'Serena';
+const friend3 = 'Jax';
+
+const friends = ['Ankur', 'Serena', 'Jax'];
+console.log(friends);
+
+const y = new Array(1991, 1984, 2008, 2020);
+// console.log(years);
+
+console.log(friends[0]);
+console.log(friends[1]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Sagar';
+console.log(friends);
+ 
+// Exercise
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
+}
+
+const years = [1990, 1967, 1958, 2003, 2020, 2015];
+const age1 = calcAge1(years[0]);
+const age2 = calcAge1(years[1]);
+const age3 = calcAge1(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+const ages = [calcAge1(years[0]), calcAge1(years[1]), calcAge1(years[years.length - 1])];
+console.log(ages);
