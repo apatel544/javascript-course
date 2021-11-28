@@ -154,6 +154,7 @@ const checkWinner = (avrgDolphins, avrgKoalas) => {
 checkWinner(dolphinScore,koalaScore);
 */
 
+/*
 // Arrays
 const friend1 = 'Ankur';
 const friend2 = 'Serena';
@@ -187,3 +188,39 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge1(years[0]), calcAge1(years[1]), calcAge1(years[years.length - 1])];
 console.log(ages);
+
+*/
+
+// METHODS with Arrays 
+
+const friends = ['Ankur', 'Serena', 'Jax'];
+console.log(friends);
+// .push = adds element to end of the Array
+const newLength = friends.push('Sagar');
+console.log(friends);
+console.log(newLength);
+
+// .unshift = adds element to the start of an Array
+friends.unshift('Reena');
+console.log(friends);
+
+// .pop = Removes the last element of the Array
+friends.pop();
+const popped = friends.pop();
+console.log(friends);
+console.log(popped);
+
+// .shift = Removes the first element of the Array
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('Serena')); // returns index of element
+console.log(friends.indexOf('Sagar')); // returns -1 since not in the friends[] Array
+
+// .includes uses Strict Equality, no Type coercion
+// .includes = used for Conditionals 
+console.log(friends.includes('Serena')); // returns T/F if element is in the array
+
+if (friends.includes('Serena')) {
+  console.log('You have a friend named Serena!');
+}
