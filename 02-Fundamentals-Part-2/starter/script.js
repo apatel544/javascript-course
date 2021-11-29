@@ -249,4 +249,25 @@ const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])]
 console.log(total);
 */
 
+// Objects
+
+const ankurArray = [
+  'Ankur',
+  'Patel',
+  2037 - 1996,
+  'developer',
+  ['Serena', 'Jax', 'Rocky']
+];
+
+//An Object contains Key/Value Pairs
+//Keys are also known as Properties
+// object literal syntax
+// Arrays are used for more ordered Data, and Unstructured data uses an Object
+const ankur = {
+  firstName: 'Ankur',
+  lastName: 'Patel',
+  age: 2037 - 1996,
+  job: 'developer',
+  friends: ['Serena', 'Jax', 'Rocky']
+};
 
