@@ -188,9 +188,9 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge1(years[0]), calcAge1(years[1]), calcAge1(years[years.length - 1])];
 console.log(ages);
-
 */
 
+/*
 // METHODS with Arrays 
 
 const friends = ['Ankur', 'Serena', 'Jax'];
@@ -224,3 +224,29 @@ console.log(friends.includes('Serena')); // returns T/F if element is in the arr
 if (friends.includes('Serena')) {
   console.log('You have a friend named Serena!');
 }
+*/
+
+/*****************************************************
+ * CODING CHALLENGE 2 - Fundamental JS Part 2
+ */
+ /*
+function calcTips(bill) {
+  // if (bill >= 50 && bill <= 300) {
+  //   bill *= .15;
+  // } else if (bill < 50 || bill > 300) {
+  //   bill *= .20;
+  // }
+  return bill >= 50 && bill <= 300 ? bill * .15 : bill * .20 ;
+}
+
+console.log(calcTips(100));
+
+const bills = [125, 555, 44];
+const tips = [calcTips(bills[0]), calcTips(bills[1]), calcTips(bills[2])];
+console.log(tips);
+
+const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])];
+console.log(total);
+*/
+
+
