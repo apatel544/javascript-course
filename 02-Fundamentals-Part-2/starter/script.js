@@ -271,3 +271,39 @@ const ankur = {
   friends: ['Serena', 'Jax', 'Rocky']
 };
 
+//Shows the object in the console
+console.log(ankur);
+
+console.log(ankur.lastName); // Use the .firstName to acces the firstName property in the ankur object.
+
+console.log(ankur['lastName']);
+
+const nameKey = 'Name';
+
+console.log(ankur['first' + nameKey]);
+console.log(ankur['last' + nameKey]);
+// console.log(ankur.'last' + nameKey);
+
+const interestedIn = prompt('What do you want to know about Ankur? Choose between firstName, lastname, age, job, and friends');
+// Dot notation
+console.log(ankur.interestedIn); // get undefined when you try accessing a property that does not exist in the object being referenced
+
+// Bracket notation
+console.log(ankur[interestedIn]);
+
+if (ankur[interestedIn]) {
+  console.log(ankur[interestedIn]);
+} else {
+  console.log('Wrong request made. Choose between firstName, lastname, age, job, and friends');
+}
+
+ankur.location = 'Charlotte';
+ankur['bestFriend'] = 'Serena';
+
+console.log(ankur);
+
+// Challenge
+// "Ankur has 3 friends, and his best friend is Serena"
+
+console.log(`${ ankur.firstName } has ${ ankur.friends.length } friends, and his best friend is ${ ankur.friends[0] }!`);
+
