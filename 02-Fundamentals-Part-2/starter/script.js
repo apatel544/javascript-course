@@ -249,6 +249,7 @@ const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])]
 console.log(total);
 */
 
+/*
 // Objects
 
 const ankurArray = [
@@ -263,6 +264,7 @@ const ankurArray = [
 //Keys are also known as Properties
 // object literal syntax
 // Arrays are used for more ordered Data, and Unstructured data uses an Object
+
 const ankur = {
   firstName: 'Ankur',
   lastName: 'Patel',
@@ -306,4 +308,48 @@ console.log(ankur);
 // "Ankur has 3 friends, and his best friend is Serena"
 
 console.log(`${ ankur.firstName } has ${ ankur.friends.length } friends, and his best friend is ${ ankur.friends[0] }!`);
+
+*/
+
+const ankur = {
+  firstName: 'Ankur',
+  lastName: 'Patel',
+  birthYear: 1996,
+  job: 'developer',
+  friends: ['Serena', 'Jax', 'Rocky'],
+  hasDriversLicense: false,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // }
+  
+  // calcAge: function () {
+  //   console.log(this); // 'this' references the object you are working with 
+  //   console.log(ankur); 
+  //   return 2037 - this.birthYear;
+  // }
+
+  calcAge: function (birthYear) {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getDriversLicense: function (hasDriversLicense) {
+    return `${this.firstName} is a ${this.calcAge()} year old ${ankur.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+  }
+  
+};
+
+console.log(ankur.calcAge());
+
+console.log(ankur.age);
+console.log(ankur.age);
+console.log(ankur.age);
+console.log(ankur.age);
+// console.log(ankur['calcAge'](1996));
+
+// Challenge 2
+// "Ankur is a 41 year old developer, and he has a driver's license"
+
+console.log(ankur.getDriversLicense());
 
