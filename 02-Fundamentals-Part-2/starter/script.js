@@ -311,6 +311,9 @@ console.log(`${ ankur.firstName } has ${ ankur.friends.length } friends, and his
 
 */
 
+/*
+// OBJECT METHODS
+
 const ankur = {
   firstName: 'Ankur',
   lastName: 'Patel',
@@ -337,7 +340,6 @@ const ankur = {
   getDriversLicense: function (hasDriversLicense) {
     return `${this.firstName} is a ${this.calcAge()} year old ${ankur.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
   }
-  
 };
 
 console.log(ankur.calcAge());
@@ -352,4 +354,50 @@ console.log(ankur.age);
 // "Ankur is a 41 year old developer, and he has a driver's license"
 
 console.log(ankur.getDriversLicense());
+*/
+
+/***********************************************
+ * CODING CHALLENGE 3 - FUNDAMENTAL JS PART 2
+ */
+
+const mark = {
+  fullName: 'Mark Miller',
+  mass: 78, // in kg
+  height: 1.69, // in m
+
+  calcBMI: function (){ // no need to pass params because we are pulling the values using the 'this.' value
+    this.bmi = this.mass / (this.height ** 2);
+    return this.bmi;
+  }
+};
+
+const john = {
+  fullName: 'John Smith',
+  mass: 92, // in kg
+  height: 1.95, // in m
+
+  calcBMI: function (){
+    this.bmi = this.mass / (this.height ** 2);
+    return this.bmi;
+  }
+};
+mark.calcBMI();
+john.calcBMI();
+
+console.log(mark.bmi, john.bmi);
+
+if (mark.bmi > john.bmi) {
+  console.log(`${ mark.fullName }'s BMI (${mark.bmi }) is higher than ${ john.fullName }'s BMI of (${john.bmi }).`);
+} else if (john.bmi > mark.bmi) {
+  console.log(`${ john.fullName }'s BMI (${ john.bmi }) is higher than ${ mark.fullName }'s BMI of (${ mark.bmi }).`);
+}
+
+
+
+
+
+
+
+
+
 
