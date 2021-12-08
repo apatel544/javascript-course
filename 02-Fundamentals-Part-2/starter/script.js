@@ -359,7 +359,7 @@ console.log(ankur.getDriversLicense());
 /***********************************************
  * CODING CHALLENGE 3 - FUNDAMENTAL JS PART 2
  */
-
+/*
 const mark = {
   fullName: 'Mark Miller',
   mass: 78, // in kg
@@ -392,12 +392,125 @@ if (mark.bmi > john.bmi) {
   console.log(`${ john.fullName }'s BMI (${ john.bmi }) is higher than ${ mark.fullName }'s BMI of (${ mark.bmi }).`);
 }
 
+*/
 
+// LOOPS
+/*
+// for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 10; rep++){
+  console.log(`Lifting weights repition ${rep}`);
+}
 
+const ankur = [
+  'Ankur',
+  'Patel',
+  2037 - 1996,
+  'developer',
+  ['Serena', 'Jax', 'Rocky']
+];
 
+const types = [];
 
+for (let i = 0; i < ankur.length; i++) {
 
+  // reading from ankur array
+  console.log(typeof ankur[i], ankur[i]);
 
+  // filling types array
+  // types[i] = typeof ankur[i];
+  types.push(ankur[i]);
 
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+// continue and break
+console.log("--- ONLY STRINGS ---");
+for (let i = 0; i < ankur.length; i++) {
+  if (typeof ankur[i] !== 'string') continue;
+  console.log(typeof ankur[i], ankur[i]);
+}
+
+console.log("--- BREAK WITH NUMBER ---");
+for (let i = 0; i < ankur.length; i++) {
+  if (typeof ankur[i] !== 'string') break;
+  console.log(typeof ankur[i], ankur[i]);
+}
+
+const ankur = [
+  'Ankur',
+  'Patel',
+  2037 - 1996,
+  'developer',
+  ['Serena', 'Jax', 'Rocky']
+];
+
+for (let i = ankur.length - 1; i >= 0; i--){
+  console.log(ankur[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++){
+  console.log(`__________STARTING EXERCISE ${ exercise }`);
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weights repetition ${ rep }`);
+  }
+}
+
+ // While Loops
+for (let rep = 1; rep <= 10; rep++){
+  console.log(`Lifting weights repition ${rep}`);
+}
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`Lifting weights repition ${ rep }`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+*/
+
+/*******************************************************
+ * CODING CHALLENGE 4 - FUND JS PART 2
+ */
+/*
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const total = [];
+
+function calcTips(bills) {
+  return bills >= 50 && bills <= 300 ? bills * .15 : bills * .20;
+}
+
+for (let i = 0; i < bills.length; i++) {
+  
+  tips.push(calcTips(bills[i]));
+  total.push(bills[i] + tips[i]);
+
+  console.log(`The bill was $${ bills[i] } which means the tip is ${tips[i]} dollars and so the total is ${total[i]}, pay up! `);
+}
+
+// BONUS CHALLENGE
+function calcAverage(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum/arr.length;
+}
+  
+console.log(calcAverage(total));
+*/
 
 
