@@ -445,8 +445,6 @@ for (let i = 0; i < ankur.length; i++) {
   if (typeof ankur[i] !== 'string') break;
   console.log(typeof ankur[i], ankur[i]);
 }
-*/
-
 
 const ankur = [
   'Ankur',
@@ -466,3 +464,51 @@ for (let exercise = 1; exercise < 4; exercise++){
     console.log(`Exercise ${exercise}: Lifting weights repetition ${ rep }`);
   }
 }
+
+ // While Loops
+for (let rep = 1; rep <= 10; rep++){
+  console.log(`Lifting weights repition ${rep}`);
+}
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`Lifting weights repition ${ rep }`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+*/
+
+/*******************************************************
+ * CODING CHALLENGE 4 - FUND JS PART 2
+ */
+
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const total = [];
+
+function calcTips(bills) {
+  return bills >= 50 && bills <= 300 ? bills * .15 : bills * .20;
+}
+
+for (let i = 0; i < bills.length; i++) {
+  
+  tips.push(calcTips(bills[i]));
+  total.push(bills[i] + tips[i]);
+
+  console.log(`The bill was $${ bills[i] } which means the tip is ${tips[i]} dollars and so the total is ${total[i]}, pay up! `);
+}
+
+// BONUS CHALLENGE
+function calcAverage(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum/arr.length;
+}
+  
+console.log(calcAverage(total));
