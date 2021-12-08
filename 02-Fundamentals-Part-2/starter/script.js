@@ -484,8 +484,7 @@ console.log(dice);
 /*******************************************************
  * CODING CHALLENGE 4 - FUND JS PART 2
  */
-
-
+/*
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const total = [];
@@ -512,3 +511,6 @@ function calcAverage(arr) {
 }
   
 console.log(calcAverage(total));
+*/
+
+
