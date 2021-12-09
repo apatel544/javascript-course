@@ -111,7 +111,6 @@ console.log(ageAnkur > ageSerena);
 console.log(ageSerena >= 18);
 */
 
-
 /*********************************************
  * Coding Challenge 1
  */
@@ -169,7 +168,7 @@ if (age >= 18){
   const yearsLeft = 18 - age;
   console.log(`Serena has ${yearsLeft} before she can drive.`);
 }
-
+ 
 const birthYear = 1998;
 let century;
 if(birthYear < 2000) {
@@ -183,8 +182,8 @@ console.log(century);
 
 /*********************************************
  * Coding Challenge 2
- * 
-*/
+ *
+ */
 /*
 const markWeight1 = 10;
 const johnWeight1 = 92;
@@ -243,7 +242,7 @@ console.log(n);
 */
 
 /**
- * Truthy and Falsy 
+ * Truthy and Falsy
  */
 
 /*
@@ -334,7 +333,7 @@ if (shouldDrive && hasGoodVision && !isTired){
 */
 
 /**********************************************************************
- * CODING CHALLENGE 3 
+ * CODING CHALLENGE 3
  */
 /*
 const dolphinAverageScore1 = (96 + 108 + 89) / 3;
@@ -456,7 +455,9 @@ console.log(drink2);
  */
 
 const bill = 430;
-const tip = (bill >= 50 && bill <= 300) ? bill * .15 : bill * .20;
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
-const total = `The bill was ${bill}, the tip was ${tip} and the total (bill + tip) came out to ${bill + tip}!`;
+const total = `The bill was ${bill}, the tip was ${tip} and the total (bill + tip) came out to ${
+  bill + tip
+}!`;
 console.log(total);
