@@ -3,10 +3,10 @@
  *  Section: Fundamentals JS Part 2
  * Course taken by: Ankur Patel
  * Start: November 17st, 2021
-****************************/
+ ****************************/
 
 // Strict Mode Activation
-'use strict';
+"use strict";
 
 /*
 let hasDriversLicense = false;
@@ -229,7 +229,7 @@ if (friends.includes('Serena')) {
 /*****************************************************
  * CODING CHALLENGE 2 - Fundamental JS Part 2
  */
- /*
+/*
 function calcTips(bill) {
   // if (bill >= 50 && bill <= 300) {
   //   bill *= .15;
@@ -512,5 +512,3 @@ function calcAverage(arr) {
   
 console.log(calcAverage(total));
 */
-
-
